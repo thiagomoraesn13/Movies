@@ -54,3 +54,9 @@ export const WrapperSuggestion = styled(Grid)`
   flex-direction: column;
   align-items: center
 `
+export const AddedFavorite = styled.div`
+  display: flex;
+  margin-left: 16px; 
+  align-items: center; 
+  color: green; 
+`

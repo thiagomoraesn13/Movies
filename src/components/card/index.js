@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -10,8 +10,9 @@ import Typography from '@material-ui/core/Typography';
 
 import Favorite from '@material-ui/icons/Favorite'
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder'
-
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+
+import { AddedFavorite } from '../wrappers/components';
 
 const useStyles = makeStyles({
   root: {
@@ -22,8 +23,6 @@ const useStyles = makeStyles({
     height: 140,
   },
 });
-
-
 
 const CustomCard = ({ movie, handleAddFavorite, handleRemoveFavorite }) => {
   const classes = useStyles();
@@ -78,13 +77,13 @@ const CustomCard = ({ movie, handleAddFavorite, handleRemoveFavorite }) => {
                 ? (
                   <>
                     Marcar como favorito
-                       <Favorite />
+                    <Favorite />
                   </>
                 )
                 : (
                   <>
                     Remover
-                       <FavoriteBorder />
+                    <FavoriteBorder />
                   </>
                 )
             }
@@ -94,7 +93,7 @@ const CustomCard = ({ movie, handleAddFavorite, handleRemoveFavorite }) => {
 
       {
         movie.addedFavorite &&
-        <div style={{ display: 'flex', marginLeft: '16px', alignItems: 'center', color: 'green' }}>
+        <AddedFavorite>
           <Typography gutterBottom variant="body2" component="p" align='left'>
             {
               movie.addedFavoriteMsg
@@ -102,7 +101,7 @@ const CustomCard = ({ movie, handleAddFavorite, handleRemoveFavorite }) => {
           </Typography>
 
           <CheckCircleIcon />
-        </div>
+        </AddedFavorite>
       }
     </Card>
   );

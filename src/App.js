@@ -69,10 +69,20 @@ const App = () => {
 
       setMovies(newMovies)
 
-      setCurrentMovie({ ...currentMovie, favorite: false, addedFavorite: true, addedFavoriteMsg: 'Filme adicionado aos favoritos' })
+      setCurrentMovie({
+        ...currentMovie,
+        favorite: false,
+        addedFavorite: true,
+        addedFavoriteMsg: 'Filme adicionado aos favoritos'
+      })
 
     } else {
-      setCurrentMovie({ ...currentMovie, favorite: false, addedFavorite: true, addedFavoriteMsg: 'Filme já adicionado' })
+      setCurrentMovie({
+        ...currentMovie,
+        favorite: false,
+        addedFavorite: true,
+        addedFavoriteMsg: 'Filme já adicionado'
+      })
     }
   }
 
@@ -126,7 +136,6 @@ const App = () => {
               ? (
                 <Favorites
                   handleRemoveFavorite={handleRemoveFavorite}
-                  movies={movies}
                 />
               )
               : (

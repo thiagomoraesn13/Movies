@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { CustomPaper, Title } from '../wrappers/components'
 
 const Errors = ({ info }) =>
