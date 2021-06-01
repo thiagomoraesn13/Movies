@@ -1,5 +1,4 @@
-# juntos
-Teste Frontend
+# Frontend
 
 # Para executar o Projeto siga os passos abaixo, em Linux
 
