@@ -21,3 +21,8 @@
 * A branch do hotfix é enviada para a `main`.
 ![Frame 3](https://github.com/thiagomoraesn13/Movies/blob/main/Captura%20de%20tela%20de%202023-09-28%2011-09-04.png?raw=true)
 
+
+## Arquivo de changelog
+
+## Version 1.0.0 (2023-09-29) 
+* **Added:** ... [136860](https://dotzmkt.visualstudio.com/Tribos%20Dotz/_boards/board/t/Squad%20Web/Stories/?workitem=145058) Criar sessão de 'Descubra se sua loja favorita está aqui:'
